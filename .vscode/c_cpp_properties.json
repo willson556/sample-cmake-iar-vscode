@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "IAR",
+            "compilerPath": "",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "mergeConfigurations": true,
+            "forcedInclude": [
+                "${workspaceFolder}/.vscode/iar_compatibility.h",
+                "${workspaceFolder}/.vscode/iar_predefined_macros.h"
+            ]
+        }
+    ],
+    "version": 4
+}

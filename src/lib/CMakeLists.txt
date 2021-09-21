@@ -1,2 +1,3 @@
-add_library(myLib lib.h lib.c)
+add_library(myLib lib.c)
+target_include_directories(myLib PUBLIC include)
 add_flags(myLib)
