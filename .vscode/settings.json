@@ -1,2 +1,6 @@
 {
+    "cmake.enabledOutputParsers": [
+        "cmake",
+        "iar"
+    ] // Requires https://github.com/microsoft/vscode-cmake-tools/pull/2131
 }

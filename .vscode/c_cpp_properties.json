@@ -6,7 +6,7 @@
             "cStandard": "c11",
             "cppStandard": "c++14",
             "configurationProvider": "ms-vscode.cmake-tools",
-            "mergeConfigurations": true,
+            "mergeConfigurations": true, // Requires https://github.com/microsoft/vscode-cpptools/pull/8174
             "forcedInclude": [
                 "${workspaceFolder}/.vscode/iar_compatibility.h",
                 "${workspaceFolder}/.vscode/iar_predefined_macros.h"
