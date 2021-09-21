@@ -1,0 +1,9 @@
+[
+  {
+    "name": "IAR",
+    "toolchainFile": "${workspaceRoot}\\iar_ewarm_toolchain.cmake",
+    "preferredGenerator": {
+        "name": "Ninja"
+    }
+  }
+]
