@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "cortex-debug",
+        "request": "launch",
+        "name": "cppdbg",
+        "servertype": "jlink",
+        "executable": "${command:cmake.launchTargetPath}",
+        "armToolchainPath": "${env:GCC_INSTALL}/bin", // Requires a GCC installation at the provided path.
+        "cwd": "${workspaceFolder}",
+        "device": "stm32f407vg", // Specify device here.
+        "interface": "swd",
+        // "svdFile": "${workspaceFolder}/Tools/RegisterDescriptions/XMC4700.svd", // Specify SVD file here if there's not a device support pack available.
+        "preLaunchTask": "build all"
+      },
+    ]
+  }

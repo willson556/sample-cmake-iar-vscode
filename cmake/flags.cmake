@@ -1,6 +1,6 @@
 function (add_flags ARG_TARGET_NAME)
 
-if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "IAR")
+if ("${CMAKE_C_COMPILER_ID}" STREQUAL "IAR")
     target_compile_options(${ARG_TARGET_NAME} PRIVATE
         "--cpu" "Cortex-M4"
         "--dlib_config" "normal"
@@ -9,7 +9,7 @@ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "IAR")
         "--config" "${CMAKE_SOURCE_DIR}/stm32f407xg.icf"
     )
 else()
-    message(FATAL_ERROR "Compiler & linker flags not defined for ${CMAKE_CXX_COMPILER_ID}!")
+    message(FATAL_ERROR "Compiler & linker flags not defined for ${CMAKE_C_COMPILER_ID}!")
 endif()
 
 endfunction()
